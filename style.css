@@ -21,5 +21,12 @@
     display:flex;
     width: 95%;
     grid-template-columns:9fr 3fr;
-    gap: 5em;
+    gap: 4em;
+}
+.search-container button{
+    background-color:cadetblue;
+}
+.search-container input{
+    border: none;
+    border-bottom:3px solid ;
 }
