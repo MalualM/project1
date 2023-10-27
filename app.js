@@ -7,4 +7,9 @@ searchBtn.addEventListener('click', () => {
 
   if (userInput.length === 0) {
     result.innerHTML = `<h3>Input can't be empty</h3>`;
-  } 
+  } else{
+    fetch(apiUrl + userInput)
+    .then(res => res.json())
+    .then(data => {
+      let userMeal = data.meals[0];
+  }
