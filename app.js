@@ -62,4 +62,6 @@ searchBtn.addEventListener('click', () => {
       });
   }
 });
-
+document.getElementById("comment-form").addEventListener("submit" , function(event){
+  event.preventDefault();
+})
