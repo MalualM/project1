@@ -22,5 +22,17 @@ searchBtn.addEventListener('click', () => {
             ingredientsList.push(`${measure} ${ingredient}`);
           }
         }
-        console.log(ingredientsList)
+        console.log(ingredientsList);
+        result.innerHTML = `
+        <img src=${userMeal.strMealThumb}>
+        <div class="details">
+          <h2>${userMeal.strMeal}</h2>
+          <h4>${userMeal.strArea}</h4>
+        </div>
+        <div id="ingredient-con"></div>
+        <div id="recipe">
+          <button id="hide-recipe">x</button>
+          <pre id="instructions">${userMeal.strInstructions}</pre>
+        </div>
+        <button id="show-recipe">View Recipe</button>`;
   }
