@@ -13,20 +13,27 @@
     position: absolute;
     transform: translateX(-45%);
     left: 55%;
-    top: 3em;
+    top: 10em;
     border-radius: 0.6em;
     box-shadow: 0 1.3em 2.6em rgba(42,32,0,0.2);
 }
 .search-container{
     display:flex;
-    width: 95%;
+    width: 85%;
     grid-template-columns:9fr 3fr;
     gap: 4em;
 }
 .search-container button{
     background-color:cadetblue;
+    left: 55%;
+    padding:0cqmax;
+    width: 10cap;
 }
 .search-container input{
-    border: none;
+    border:none;
     border-bottom:3px solid ;
+}
+img{
+    display: block;
+    width: 50%
 }
