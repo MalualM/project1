@@ -35,4 +35,17 @@ searchBtn.addEventListener('click', () => {
           <pre id="instructions">${userMeal.strInstructions}</pre>
         </div>
         <button id="show-recipe">View Recipe</button>`;
+
+        let ingredientCon = document.getElementById("ingredient-con");
+        let parent = document.createElement("ul");
+        let recipe = document.getElementById("recipe");
+        let hideRecipe = document.getElementById("hide-recipe");
+        let showRecipe = document.getElementById("show-recipe");
+
+        ingredientsList.forEach((ingredient) => {
+          let child = document.createElement("li");
+          child.innerText = ingredient;
+          parent.appendChild(child);
+          ingredientCon.appendChild(parent);
+        });
   }
