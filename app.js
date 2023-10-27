@@ -64,4 +64,16 @@ searchBtn.addEventListener('click', () => {
 });
 document.getElementById("comment-form").addEventListener("submit" , function(event){
   event.preventDefault();
-})
+  let name=document.getElementById("name").value;
+  let comment=document.getElementById("comment").value;
+  if(name && comment){
+    const commentDiv=document.createComment("div");
+    commentDiv.innerHTML="<strong>"+ name + ":</strong" + comment;
+    document.getElementById("comment").appendChild(commentDiv)
+    document.getElementById("name").value="";
+    document.getElementById("comment").value="";
+  }
+  else{
+    alert("Name and Comment can't be empty!")
+  }
+});
